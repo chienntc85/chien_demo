@@ -1,0 +1,104 @@
+<b:beans xmlns="http://www.springframework.org/schema/security"
+		 xmlns:b="http://www.springframework.org/schema/beans"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security https://www.springframework.org/schema/security/spring-security.xsd">
+<!-- 
+	<http>    
+	    <headers>
+	        <frame-options policy="SAMEORIGIN"/>
+	    </headers>
+	</http>
+	 -->
+	<b:bean id="securityContextRepository"
+		class='org.springframework.security.web.context.NullSecurityContextRepository' />
+	<b:bean id="securityContextPersistenceFilter"
+		class="org.springframework.security.web.context.SecurityContextPersistenceFilter">
+		<b:constructor-arg ref="securityContextRepository" />
+	</b:bean>
+
+	<b:bean id="filterChainProxy"
+		class="org.springframework.security.web.FilterChainProxy">
+		<filter-chain-map request-matcher="ant">
+			<filter-chain pattern="/**"
+				filters="securityContextPersistenceFilter" />
+		</filter-chain-map>
+	</b:bean>
+	<b:bean id="firewall"
+		class="org.springframework.security.web.firewall.DefaultHttpFirewall">
+		<b:property name="allowUrlEncodedSlash" value="true" />
+	</b:bean>
+
+	<b:bean id="encoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+	</b:bean>
+	<http-firewall ref="firewall" />
+	<http security="none" pattern="/resources/**" />
+	
+	<http auto-config="true" use-expressions="true">
+		<csrf disabled="true" />
+
+		<intercept-url pattern="/" access="permitAll" />
+		<intercept-url pattern="/search" access="permitAll" />
+		<intercept-url pattern="/resources/**"
+			access="permitAll" />
+		<intercept-url pattern="/user**"
+			access="hasRole('USER')" />
+			<intercept-url pattern="/cart"
+			access="hasRole('USER')" />
+			<intercept-url pattern="/detail-bill"
+			access="hasRole('USER')" />
+		<intercept-url pattern="/manage**"
+			access="hasRole('ADMIN')" />
+		<intercept-url pattern="/dashboard"
+			access="hasRole('ADMIN')" />
+		<intercept-url pattern="/add-book"
+			access="hasRole('ADMIN')" />
+		<intercept-url pattern="/add-user"
+			access="hasRole('ADMIN')" />
+
+		<access-denied-handler error-page="/403" />
+		<form-login login-page="/login"
+			login-processing-url="/j_spring_security_login"
+			default-target-url="/loginsuccess"
+			authentication-failure-url="/login?error"
+			username-parameter="username" password-parameter="password" />
+		<logout logout-url="/j_spring_security_logout"
+			logout-success-url="/logout" delete-cookies="JSESSIONID" />
+	</http>
+	
+	<b:import resource="classpath:Hibernate.xml" />
+	
+	<!-- sessionfactory -->
+	<b:bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<b:property name="dataSource" ref="dataSource" />
+		<b:property name="packagesToScan" value="ute.hibook.entity" />
+		<b:property name="hibernateProperties">
+			<b:props>
+				<b:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</b:prop>
+				<b:prop key="hibernate.show_sql">true</b:prop>
+			</b:props>
+		</b:property>
+
+	</b:bean>
+	<!-- userDao -->
+	<b:bean id="userDao" class="ute.hibook.dao.imp.UserDaoSercurity">
+		<b:property name="sessionFactory" ref="sessionFactory" />
+	</b:bean>
+
+
+	<!-- userService -->
+	<b:bean id="myUserDetailsService"
+		class="ute.hibook.service.impl.MyUserDetailsService">
+		<b:property name="userDao" ref="userDao" />
+	</b:bean>
+	
+	<authentication-manager>
+		<!-- authentication from database -->
+		<authentication-provider user-service-ref="myUserDetailsService">
+			<password-encoder ref="encoder"/>
+		</authentication-provider>
+	</authentication-manager>
+
+</b:beans>
