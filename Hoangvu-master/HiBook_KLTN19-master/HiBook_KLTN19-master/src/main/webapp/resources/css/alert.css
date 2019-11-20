@@ -1,0 +1,26 @@
+.top-alert {
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	z-index: 100000;
+	font-size: 15px;
+	left: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.top-alert .alert {
+	width: auto !important;
+	height: 100%;
+	display: inline;
+	position: relative;
+	margin: 0;
+	border-color: #9a9082 !important;
+}
+
+.top-alert .alert .close {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+	color: inherit;
+}
