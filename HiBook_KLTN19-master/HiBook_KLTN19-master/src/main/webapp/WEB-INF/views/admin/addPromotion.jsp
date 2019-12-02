@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
-<title>Add Promotion | HiBookAdmin</title>
+<title>Add Promotion | HiBookTourAdmin</title>
 </head>
 <body class="bg-light">
 
@@ -65,7 +65,7 @@
 						<div class="row form-group">
 							<div class="col col-md-2">
 								<label for="text-input" class=" form-control-label">Ngày
-									Bắt Đầu</label>
+									Khởi Hành</label>
 							</div>
 							<div class="col-12 col-md-10">
 								<input type="text" id="dateStart" name="publicationDate"
@@ -116,14 +116,14 @@
 						</div>
 						<div class="row form-group">
 							<div class="col col-md-2">
-								<label for="file-multiple-proofread" class=" form-control-label">Sách
+								<label for="file-multiple-proofread" class=" form-control-label">Tour
 									Khuyến Mãi</label>
 							</div>
 							<div class="col-12 col-md-10">
 								<div class="container">
 									<div class="row">
 										<div class="ui-widget">
-											<div id="project-label">Tìm sách:</div>
+											<div id="project-label">Tìm tour:</div>
 											<img id="project-icon" style='width: 60px;' src=""
 												class="ui-state-default" alt=""> <input id="project">
 											<input type="hidden" id="project-id"> <input

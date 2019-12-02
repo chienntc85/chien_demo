@@ -8,7 +8,7 @@
 	<div class="container">
 		<div class="row text-xs-center text-sm-left text-md-left">
 			<div class="col-xs-12 col-sm-3 col-md-3">
-				<h5>VỀ TCTOUR</h5>
+				<h5>VỀ BOOKTOUR</h5>
 				<ul class="list-unstyled quick-links">
 					<li><a href="javascript:void();"><i
 							class="fa fa-angle-double-right"></i>Giới thiệu Tour</a></li>
@@ -55,7 +55,7 @@
 				<ul class="list-unstyled quick-links">
 					<li><a><i class="fa fa-map-marker"></i>Address : 135 Thành Thái, phường 10, Quận 10, TP Hồ Chí Minh</a></li>
 					<li><a><i class="fa fa-phone"></i>(+84)868934262</a></li>
-					<li><a href="#"><i class="fa fa-envelope"></i>tctour@gmail.com</a>
+					<li><a href="#"><i class="fa fa-envelope"></i>booktour@gmail.com</a>
 					</li>
 				</ul>
 			</div>
@@ -79,11 +79,14 @@
 					class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 					<p class="h6">
 						&copy 2018 All right Reversed <a class="text-green ml-2"
-							href="https://www.tctour.com" target="_blank">cTour</a>
+							href="https://www.tctour.com" target="_blank">bookTour</a>
 					</p>
 				</div>
 				</hr>
 			</div>
+		</div>
+		<div>															
+		
 		</div>
 </section>
 <!--nút quay về đầu trang-->
@@ -92,3 +95,4 @@
 		<i class="glyphicon glyphiconc glyphicon-chevron-up"></i>
 	</a>
 </div>
+<script lang="javascript">var _vc_data = {id : 10049139, secret : 'b44ac7c78b99e09e23de34237249c9da'};(function() {var ga = document.createElement('script');ga.type = 'text/javascript';ga.async=true; ga.defer=true;ga.src = '//live.vnpgroup.net/client/tracking.js?id=10049139';var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>

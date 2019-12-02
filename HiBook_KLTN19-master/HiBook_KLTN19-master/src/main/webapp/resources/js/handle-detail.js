@@ -10,7 +10,7 @@ $(document).ready(function() {
 	}).then(function(data) { 
 				//$('#post-review-box form').attr('action', '/HiBook_KLTN19/add-review/'+idSach);
 				if(data.quantity < 1){
-					$('#btn-purchase').html('<i class="fas fa-ban"></i> Hết sách');
+					$('#btn-purchase').html('<i class="fas fa-ban"></i> Hết Tour');
 				}
 				$('.item-photo').append(
 						'<img style="max-width:100%;" src="../resources/images/book/'
@@ -19,7 +19,7 @@ $(document).ready(function() {
 				$('#tensach').attr('data-type',data.typebook.idType);
 				$('#giaban').text(data.price * (100 - data.discount) / 100 + " đ");
 				$('#giamgia').text(data.discount + "%");
-				$('#giagoc small').text("Giá bìa: "+ data.price+ " đ");
+				$('#giagoc small').text("Giá tour: "+ data.price+ " đ");
 				gia = data.price;
 				$('#tab_default_1').append('<p style="font-weight: bold;">'
 						+ data.nameBook+ '</p><p>'+ data.introBook+ '</p>');
@@ -27,16 +27,16 @@ $(document).ready(function() {
 				.append('<tbody><tr>'
 						+ '<th style="width: 25%">Công ty phát hành</th><td><a href="#">'
 						+ data.supplier.nameSupplier + '</a></td>'
-						+ '</tr><tr><th>Tác giả</th><td><a id="tacgia1" href="#"></a></td>'
-						+ '</tr><tr><th >Nhà xuất bản</th><td>'
+						+ '</tr><tr><th>Lịch trình</th><td><a id="tacgia1" href="#"></a></td>'
+						+ '</tr><tr><th >Địa điểm xuất phát	</th><td>'
 						+ data.publisher + '</td></tr>'
-						+ '<tr><th >Ngày xuất bản</th><td>'
+						+ '<tr><th >Ngày khởi hành</th><td>'
 						+ data.publicationDate + '</td></tr>'
-						+ '<tr><th >Kích thước</th><td>'
+						+ '<tr><th >Kích thước hành lý</th><td>'
 						+ data.size + '</td></tr>'
-						+ '<tr><th >Số trang</th><td>'
+						+ '<tr><th >Số người</th><td>'
 						+ data.numberPage + '</td></tr>'
-						+ '<tr><th >Loại bìa</th><td>'
+						+ '<tr><th >Phương tiện</th><td>'
 						+ data.cover + '</td></tr></tbody>');
 				var text_author = "";
 				$.each(data.authors, function(i, item) {
@@ -111,10 +111,10 @@ $(document).ready(function() {
 					var sp2='';
 					$.each(data,function(i, item) {
 						if(i<4){
-							sp1+='<div class="col-xs-3 col-sm-3"><a href="/HiBook_KLTN19/detail-book/'+item.idBook+'" class="thumbnail">'
+							sp1+='<div class="col-xs-3 col-sm-3"><a href="/HiBook_KLTN19/detail-tour/'+item.idBook+'" class="thumbnail">'
 								+'<img src="/HiBook_KLTN19/resources/images/book/'	+ item.picBook + '" alt="Image" style="max-height: 234px; max-width: 100%;"></a></div>';
 						}else if(i>3&&i<8){
-							sp2+='<div class="col-xs-3 col-sm-3"><a href="/HiBook_KLTN19/detail-book/'+item.idBook+'" class="thumbnail">'
+							sp2+='<div class="col-xs-3 col-sm-3"><a href="/HiBook_KLTN19/detail-tour/'+item.idBook+'" class="thumbnail">'
 								+'<img src="/HiBook_KLTN19/resources/images/book/'	+ item.picBook + '" alt="Image" style="max-height: 234px; max-width: 100%;"></a></div>';
 						}
 					});

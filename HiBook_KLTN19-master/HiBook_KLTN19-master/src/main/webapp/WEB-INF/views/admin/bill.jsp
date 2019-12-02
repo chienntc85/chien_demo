@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="resources/css/bootadmin.min.css">
     
 
-    <title>Bill | HiBookAdmin</title>
+    <title>Bill | HiBookTourAdmin</title>
     
     <style type="text/css">
     	.top-alert {
@@ -47,7 +47,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-success">
         <a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
-        <a class="navbar-brand" href="#" style="font-weight:bold;">HiBook</a>
+        <a class="navbar-brand" href="#" style="font-weight:bold;">HiBookTour</a>
 
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
@@ -77,12 +77,11 @@
 		                <thead>
 		                <tr>
 		                    <th>ID</th>
-		                    <th>người tạo</th>
+		                    <th>Người tạo</th>
 		                    <th>Ngày tạo</th>
 		                    <th>Tổng</th>
-		                    <th>Thanh toán</th>
-		                    <th>Tình trạng</th>
-		                    <th>Vận chuyển</th>
+		                    <th>Tình Trạng</th>
+		                    
 		                </tr>
 		                </thead>
 		                <tbody id="list-Bill">

@@ -25,9 +25,8 @@ $(document).ready(function getlistBill() {
                 '<td class="user">'+item.user.nameUser+'</td>'+
                 '<td class="dateCreate">'+item.dateCreate+'</td>'+
                 '<td class="total">'+item.total+'</td>'+
-                '<td class="payment" data-id="'+item.payment.idPayment+'">'+item.payment.namePayment+'</td>'+
                 '<td class="orderStatus" >'+getStatus(item.orderstatus.idStatus)+'</td>'+
-                '<td class="transport" data-id="'+item.transport.idTransport+'">'+item.transport.nameTransport+'</td></tr>';
+                '</tr>';
         });
     	mydata=data;
     	$('#list-Bill').append(auth);

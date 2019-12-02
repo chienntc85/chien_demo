@@ -20,7 +20,7 @@
 
 	<nav class="navbar navbar-expand navbar-dark bg-success">
 		<a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
-		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBook</a>
+		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBookTour</a>
 
 		<div class="navbar-collapse collapse">
 			<ul class="navbar-nav ml-auto">
@@ -48,7 +48,7 @@
 				<a id="add-transport" href="#"
 					class="btn btn-icon btn-pill btn-success" data-toggle="modal"
 					data-target="#modalAdd"> <i class="fa fa-fw fa-plus"></i> Thêm
-					vận chuyển
+					thanh toán
 				</a>
 			</div>
 
@@ -61,7 +61,7 @@
 						<thead>
 							<tr>
 								<th>ID</th>
-								<th>Tên Vận chuyển</th>
+								<th>Tên thanh toán</th>
 								<th>Mô tả</th>
 								<th>Chi phí</th>
 								<th class="actions">Actions</th>
@@ -80,8 +80,7 @@
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalCenterTitle">Thêm Vận
-							chuyển</h5>
+						<h5 class="modal-title" id="exampleModalCenterTitle">Thêm thanh toán</h5>
 						<button type="button" class="close" data-dismiss="modal"
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
@@ -90,11 +89,11 @@
 					<!-- modal Body  -->
 					<div class="modal-body">
 						<div class="col-12">
-							<label for="validationServer01">Tên loại Vận chuyển</label> <input
+							<label for="validationServer01">Tên loại thanh toán</label> <input
 								type="text" class="form-control is-valid"
 								id="validationServer01" placeholder="Name transport*" required>
 							<div class="invalid-feedback" style="display: none;">Hãy
-								nhập tên loại Vận chuyển.</div>
+								nhập tên loại thanh toán.</div>
 							<div class="valid-feedback" style="display: none;">Looks
 								good!</div>
 							<label for="validationServer02">Mô tả</label> <input type="text"

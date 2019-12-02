@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootadmin.min.css">
 	<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/custominput.css">
 
-    <title>Add Book | HiBookAdmin</title>
+    <title>Add Book Tour | HiBokkTourAdmin</title>
 </head>
 <body class="bg-light">
 
@@ -24,24 +24,24 @@
              <div class="col-lg-12">
                  <div class="card">
                      <div class="card-header">
-                         <strong>Book</strong> Form
+                         <strong>Tour</strong> Form
                      </div>
 	                     <div class="card-body card-block">
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="text-input" class=" form-control-label">Tên sách</label>
+	                                     <label for="text-input" class=" form-control-label">Tên tour</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
-	                                     <input type="text" id="nameBook" name="nameBook" placeholder="Book name" class="form-control">
+	                                     <input type="text" id="nameBook" name="nameBook" placeholder="Tên tour" class="form-control">
 	                                     <small class="form-text text-muted">This is a help text</small>
 	                                 </div>
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="text-input" class=" form-control-label">Giá bìa</label>
+	                                     <label for="text-input" class=" form-control-label">Giá Tour</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
-	                                     <input type="number" id="price" name="price" placeholder="Price book" class="form-control">
+	                                     <input type="number" id="price" name="price" placeholder="Giá Tour" class="form-control">
 	                                     <small class="form-text text-muted">This is a help number</small>
 	                                 </div>
 	                             </div>
@@ -50,77 +50,77 @@
 	                                     <label for="text-input" class=" form-control-label">Giảm giá(%)</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
-	                                     <input type="number" id="discount" name="discount" placeholder="Discount price book" class="form-control">
+	                                     <input type="number" id="discount" name="discount" placeholder="Giảm giá" class="form-control">
 	                                     <small class="form-text text-muted">This is a help number</small>
 	                                 </div>
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="text-input" class=" form-control-label">Nhà xuất bản</label>
+	                                     <label for="text-input" class=" form-control-label">Địa điểm xuất phát</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
-	                                     <input type="text" id="publisher" name="publisher" placeholder="Publisher" class="form-control">
+	                                     <input type="text" id="publisher" name="publisher" placeholder="địa điểm xuất phát" class="form-control">
 	                                     <small class="form-text text-muted">This is a help text</small>
 	                                 </div>
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="text-input" class=" form-control-label">Kích thước</label>
+	                                     <label for="text-input" class=" form-control-label">Số lượng Tour</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
 	                                     <input type="text" id="size" name="size" placeholder="Size" class="form-control">
-	                                     <small class="form-text text-muted">ex: 14.5 x 20.5 cm</small>
+	                                     <small class="form-text text-muted">ex: 20(kg)</small>
 	                                 </div>
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="text-input" class=" form-control-label">Số trang</label>
+	                                     <label for="text-input" class=" form-control-label">Số ngày</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
-	                                     <input type="number" id="numberPage" name="numberPage" placeholder="Number Page" class="form-control">
+	                                     <input type="number" id="numberPage" name="numberPage" placeholder="Số ngày" class="form-control">
 	                                     <small class="form-text text-muted">This is a help number</small>
 	                                 </div>
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="text-input" class=" form-control-label">Ngày xuất bản</label>
+	                                     <label for="text-input" class=" form-control-label">Ngày khời hành</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
-	                                     <input type="text" id="publicationDate" name="publicationDate" placeholder="Publication Date" class="form-control">
-	                                     <small class="form-text text-muted">ex: 10-2018</small>
+	                                     <input type="text" id="publicationDate" name="publicationDate" placeholder="Ngày khời hành" class="form-control">
+	                                     <small class="form-text text-muted">ex: 10-10-2019</small>
 	                                 </div>
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="text-input" class=" form-control-label">Số lượng</label>
+	                                     <label for="text-input" class=" form-control-label">Khối lượng hành lý</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
-	                                     <input type="number" id="quantity" name="quantity" placeholder="Quantity book" class="form-control">
+	                                     <input type="number" id="quantity" name="quantity" placeholder="Khối lượng hành lý" class="form-control">
 	                                     <small class="form-text text-muted">This is a help number</small>
 	                                 </div>
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label class=" form-control-label">Loại bìa</label>
+	                                     <label class=" form-control-label">Phương tiện</label>
 	                                 </div>
 	                                 <div class="col col-md-9">
 	                                     <div class="form-check">
 	                                         <div class="radio">
 	                                             <label for="radio1" class="form-check-label ">
-	                                                 <input type="radio" id="radio1" name="cover" value="Bìa mềm" class="form-check-input" checked="true">Bìa mềm
+	                                                 <input type="radio" id="radio1" name="cover" value="Bìa mềm" class="form-check-input" checked="true">Máy bay
 	                                             </label>
 	                                         </div>
 	                                         <div class="radio">
 	                                             <label for="radio2" class="form-check-label ">
-	                                                 <input type="radio" id="radio2" name="cover" value="Bìa cứng" class="form-check-input">Bìa cứng
+	                                                 <input type="radio" id="radio2" name="cover" value="Bìa cứng" class="form-check-input">Xe khách
 	                                             </label>
 	                                         </div>
 	                                     </div>
-	                                 </div>
+	                                 </div>	
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="textarea-input" class=" form-control-label">Giới thiệu sách</label>
+	                                     <label for="textarea-input" class=" form-control-label">Giới thiệu tour</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
 	                                     <textarea name="intro" id="intro" rows="9" placeholder="Content..." class="form-control"></textarea>
@@ -128,7 +128,7 @@
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="file-multiple-img" class=" form-control-label">Hình sách</label>
+	                                     <label for="file-multiple-img" class=" form-control-label">Hình tour</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9 mb-3">
 	                                 	<div class="mb-3">
@@ -143,7 +143,7 @@
 								</div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="file-multiple-proofread" class=" form-control-label">File đọc thử</label>
+	                                     <label for="file-multiple-proofread" class=" form-control-label">File review</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
 	                                 	<div class="mb-3">
@@ -158,7 +158,7 @@
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="select" class=" form-control-label">Loại sách</label>
+	                                     <label for="select" class=" form-control-label">Loại tour</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
 	                                     <select name="idType" id="idType" class="form-control">
@@ -170,7 +170,7 @@
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="select" class=" form-control-label">Nhà cung cấp</label>
+	                                     <label for="select" class=" form-control-label">Công ty lữ hành</label>
 	                                 </div>
 	                                 <div class="col-12 col-md-9">
 	                                     <select name="idSupplier" id="idSupplier" class="form-control">
@@ -182,7 +182,7 @@
 	                             </div>
 	                             <div class="row form-group">
 	                                 <div class="col col-md-3">
-	                                     <label for="multiple-select" class=" form-control-label">Tác giả</label>
+	                                     <label for="multiple-select" class=" form-control-label">Lịch trình</label>
 	                                 </div>
 	                                 <div class="col col-md-3">
 	                                     <select name="idAuthor" id="idAuthor" class="form-control " >

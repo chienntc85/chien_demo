@@ -47,13 +47,8 @@ public class BillServiceImpl implements BillService{
 		bill.setNameReceiver(billDTO.getNameReceiver());
 		bill.setNumberphone(billDTO.getNumberphone());
 		bill.setTotal(billDTO.getTotal());
-		
-		Payment payment=paymentDao.getPaymentById(billDTO.getPayment().getIdPayment());
-		bill.setPayment(payment);
 		Orderstatus orderstatus= orderstatusDao.getOrderstatusById(billDTO.getOrderstatus().getIdStatus());
 		bill.setOrderstatus(orderstatus);
-		Transport transport= transportDao.getTransportById(billDTO.getTransport().getIdTransport());
-		bill.setTransport(transport);
 		User user= userDao.getUserById(billDTO.getUser().getIdUser());
 		bill.setUser(user);
 		
@@ -148,16 +143,8 @@ public class BillServiceImpl implements BillService{
 			billDTO.setNumberphone(bill.getNumberphone());
 			billDTO.setTotal(bill.getTotal());
 			
-			PaymentDTO paymentDTO=new PaymentDTO(bill.getPayment().getIdPayment(), bill.getPayment().getNamePayment());
-			billDTO.setPayment(paymentDTO);
-			
 			OrderstatusDTO orderstatusDTO=new OrderstatusDTO(bill.getOrderstatus().getIdStatus(), bill.getOrderstatus().getNameStatus());
-			billDTO.setOrderstatus(orderstatusDTO);
-			
-			TransportDTO transportDTO= new TransportDTO(bill.getTransport().getIdTransport()
-					,bill.getTransport().getDescribes(),bill.getTransport().getFee(),bill.getTransport().getNameTransport());
-			billDTO.setTransport(transportDTO);
-			
+			billDTO.setOrderstatus(orderstatusDTO);			
 			UserDTO userDTO= new UserDTO(bill.getUser().getIdUser(), bill.getUser().getAddress(),
 					bill.getUser().getEmail(), bill.getUser().getNameUser(), bill.getUser().getNumberphone());
 			billDTO.setUser(userDTO);

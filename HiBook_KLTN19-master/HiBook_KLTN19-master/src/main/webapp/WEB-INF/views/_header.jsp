@@ -38,7 +38,7 @@
 			<ul>
 				<li class="sdt"><span class="glyphicon glyphicon-earphone"></span>0868.934.262
 				</li>
-				<li class="gmail"><span class="	glyphicon glyphicon-envelope"></span>tctour@gmail.com</li>
+				<li class="gmail"><span class="	glyphicon glyphicon-envelope"></span>booktour@gmail.com</li>
 			</ul>
 		</div>
 	</div>
@@ -52,14 +52,14 @@
 				<c:choose>
 					<c:when test="${pageContext.request.userPrincipal.name !=null}">
 						<a class="navbar-brand" href="<%=request.getContextPath()%>/">
-							<img style="width: 220px; padding-top: 10px;"
-							src="<%=request.getContextPath()%>/resources/images/TC.png" />
+							<img style="width: 220px; height: 140px; margin-top: -6px;"
+							src="<%=request.getContextPath()%>/resources/images/tc12.png" />
 						</a>
 					</c:when>
 					<c:otherwise>
 						<a class="navbar-brand" href="<%=request.getContextPath()%>/">
-							<img style="width: 220px; padding-top: 10px;"
-							src="<%=request.getContextPath()%>/resources/images/TC.png" />
+							<img style="width: 220px; height: 140px; margin-top: -6px;"
+							src="<%=request.getContextPath()%>/resources/images/tc12.png" />
 						</a>
 					</c:otherwise>
 				</c:choose>

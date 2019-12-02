@@ -69,7 +69,7 @@ $(document).ready(function getlistbook() {
         var id=$(this).closest("tr").find('.idPromotion').text();
         var name=$(this).closest("tr").find('.title').text();
         var index= table.row( $(this).closest("tr") ).index();
-        $('#xoa-title').text('Bạn có chắc muốn xóa cuốn: "'+name+'" không?');
+        $('#xoa-title').text('Bạn có chắc muốn xóa: "'+name+'" không?');
         
         deletebook(id, index);
     });

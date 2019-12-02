@@ -109,7 +109,7 @@ public class BillController {
 	public ResponseEntity<?> addBill(@RequestParam String nameReceiver, @RequestParam String numberphone,
 			 @RequestParam String deliveryAdress, @RequestParam String dateCreate,
 			 @RequestParam int total, @RequestParam int idUser,
-			 @RequestParam int idPayment, @RequestParam int idTransport, @RequestParam String email){
+			 @RequestParam String email){
 		BillDTO billDTO=new BillDTO();
 		billDTO.setNameReceiver(nameReceiver);
 		billDTO.setNumberphone(numberphone);
@@ -119,16 +119,7 @@ public class BillController {
 		UserDTO user=new UserDTO();
 		user.setIdUser(idUser);
 		String emailclient = userSer.getUserById(idUser).getEmail();
-		billDTO.setUser(user);
-		
-		PaymentDTO payment=new PaymentDTO();
-		payment.setIdPayment(idPayment);
-		billDTO.setPayment(payment);
-		
-		TransportDTO transport=new TransportDTO();
-		transport.setIdTransport(idTransport);
-		billDTO.setTransport(transport);
-		
+		billDTO.setUser(user);		
 		List<OrderstatusDTO> lstStatus = statusSer.getAllOrderstatus();
 		OrderstatusDTO status = lstStatus.get(0);
 		billDTO.setOrderstatus(status);

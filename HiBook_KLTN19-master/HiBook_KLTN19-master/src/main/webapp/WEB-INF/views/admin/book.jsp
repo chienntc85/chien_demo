@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="resources/css/bootadmin.min.css">
     
 
-    <title>Book | HiBookAdmin</title>
+    <title>Tour | HiBookTourAdmin</title>
 </head>
 <body class="bg-light">
 
     <nav class="navbar navbar-expand navbar-dark bg-success">
         <a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
-        <a class="navbar-brand" href="#" style="font-weight:bold;">HiBook</a>
+        <a class="navbar-brand" href="#" style="font-weight:bold;">HiBookTour</a>
 
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
@@ -41,10 +41,10 @@
 		<!-- CONTENT  -->
         <div class="content p-4">
         	
-             <h2 class="mb-4">Datatable Sách</h2>
+             <h2 class="mb-4">Datatable Tour</h2>
              <div width="100%" style="text-align: right;">
              	<a id="add-book" href="add-book"  class="btn btn-icon btn-pill btn-success">
-             		<i class="fa fa-fw fa-plus"></i> Thêm Sách
+             		<i class="fa fa-fw fa-plus"></i> Thêm Tour
              	</a>
              </div>
 				
@@ -54,14 +54,14 @@
 		                <thead>
 		                <tr>
 		                    <th>ID</th>
-		                    <th>Tên Sách</th>
+		                    <th>Tên Tour</th>
 		                    <th>Ảnh</th>
-		                    <th>Ngày xuất bản</th>
+		                    <th>Ngày khởi hành</th>
 		                    <th>Số lượng</th>
 		                    <th>Giá</th>
 		                    <th>Giảm giá</th>
-		                    <th>Loại sách</th>
-		                    <th>Nhà cung cấp</th>
+		                    <th>Loại tour</th>
+		                    <th>Công ty lữ hành</th>
 		                    <th class="actions">Actions</th>
 		                </tr>
 		                </thead>
@@ -85,7 +85,7 @@
 	                <!-- modal Body  -->
 		                <div class="modal-body">
 		                    <div class="col-12">
-	                        	<h5 id="xoa-title" class="modal-title" >Bạn có chắc muốn xóa cuốn sách này không?</h5>
+	                        	<h5 id="xoa-title" class="modal-title" >Bạn có chắc muốn xóa tour này không?</h5>
 	                    	</div>
 		                </div>
 		                <div class="modal-footer">
@@ -132,7 +132,7 @@
 	                 <div class="row" style="max-width:90%; margin:auto;">
 	                 	<h5>Giới thiệu</h5>
 	                 	<div id="gioithieu"></div>
-	                 	<p><strong>Đọc thử: </strong><a href="#" id="docthu"></a></p>
+	                 	<p><strong>Review: </strong><a href="#" id="docthu"></a></p>
 	                 </div>
 		        </div>
 		        

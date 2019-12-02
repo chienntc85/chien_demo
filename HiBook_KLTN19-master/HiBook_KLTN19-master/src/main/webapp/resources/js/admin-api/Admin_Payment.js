@@ -47,14 +47,14 @@ $(document).ready(function getlistpayment() {
     	$('#modalAdd').modal('toggle');
         var id=$(this).closest("tr").find('.idpayment').text();
     	var name=$(this).closest("tr").find('.namepayment').text();
-        $('#exampleModalCenterTitle').text('Sửa Tác Giả');
+        $('#exampleModalCenterTitle').text('Sửa Thanh Toán');
         $('#validationServer01').val(name);
         button_save=id;
         rowclick=table.row( $(this).closest("tr") ).index();
 	});
     /* Click add */
     $('#add-payment').click(function(){
-    	$('#exampleModalCenterTitle').text('Thêm Tác Giả');
+    	$('#exampleModalCenterTitle').text('Thêm Thanh Toán');
     	button_save=-1;
     	resetInputpayment();
     });

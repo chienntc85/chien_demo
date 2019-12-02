@@ -47,14 +47,14 @@ $(document).ready(function getlistsupplier() {
     	$('#modalAdd').modal('toggle');
         var id=$(this).closest("tr").find('.idsupplier').text();
     	var name=$(this).closest("tr").find('.namesupplier').text();
-        $('#exampleModalCenterTitle').text('Sửa Tác Giả');
+        $('#exampleModalCenterTitle').text('Sửa công ty lữ hành');
         $('#validationServer01').val(name);
         button_save=id;
         rowclick=table.row( $(this).closest("tr") ).index();
 	});
     /* Click add */
     $('#add-supplier').click(function(){
-    	$('#exampleModalCenterTitle').text('Thêm Tác Giả');
+    	$('#exampleModalCenterTitle').text('Thêm công ty lữ hành');
     	button_save=-1;
     	resetInputsupplier();
     });
@@ -139,7 +139,7 @@ $(document).ready(function getlistsupplier() {
         var id=$(this).closest("tr").find('.idsupplier').text();
         var name=$(this).closest("tr").find('.namesupplier').text();
         var index= table.row( $(this).closest("tr") ).index();
-        $('#xoa-title').text('Bạn có chắc muốn xóa Nhà cung cấp: "'+name+'" này không?');
+        $('#xoa-title').text('Bạn có chắc muốn xóa: "'+name+'" này không?');
         deletesupplier(id, index);
     });
     /* Delete supplier */

@@ -57,7 +57,7 @@
 						</div>
 					</div>
 					<div class="card-body">
-					    <h5 class="card-title" style="color: black;"><strong>NHÀ CUNG CẤP</strong></h5>
+					    <h5 class="card-title" style="color: black;"><strong>CÔNG TY LỮ HÀNH</strong></h5>
 					    <div class="bg" id="filter_supplier">
 					    	<c:forEach var="item" items="${search.lstSupplier}">
 					    		<label class="chiller_cb">${item.nameSupplier} (${item.numBookSearch})

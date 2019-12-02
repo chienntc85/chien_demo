@@ -48,14 +48,14 @@ $(document).ready(function getlistAuthor() {
     	$('#modalAdd').modal('toggle');
         var id=$(this).closest("tr").find('.idAuthor').text();
     	var name=$(this).closest("tr").find('.nameAuthor').text();
-        $('#exampleModalCenterTitle').text('Sửa Tác Giả');
+        $('#exampleModalCenterTitle').text('Sửa Lịch Trình');
         $('#validationServer01').val(name);
         button_save=id;
         rowclick=table.row( $(this).closest("tr") ).index();
 	});
     /* Click add */
     $('#add-author').click(function(){
-    	$('#exampleModalCenterTitle').text('Thêm Tác Giả');
+    	$('#exampleModalCenterTitle').text('Thêm Lịch Trình');
     	button_save=-1;
     	resetInputAuthor();
     });
@@ -140,7 +140,7 @@ $(document).ready(function getlistAuthor() {
         var id=$(this).closest("tr").find('.idAuthor').text();
         var name=$(this).closest("tr").find('.nameAuthor').text();
         var index= table.row( $(this).closest("tr") ).index();
-        $('#xoa-title').text('Bạn có chắc muốn xóa tác giả: "'+name+'" này không?');
+        $('#xoa-title').text('Bạn có chắc muốn xóa: "'+name+'" này không?');
         deleteAuthor(id, index);
     });
     /* Delete author */

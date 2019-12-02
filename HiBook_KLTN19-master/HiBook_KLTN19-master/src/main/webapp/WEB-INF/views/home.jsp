@@ -64,7 +64,7 @@
 								<a href="#"><img src="<%=request.getContextPath()%>/resources/images/banner/3.png" alt="banner"></a>
 							</div>
 							<div class="banner-text">
-								<h4>Thanh toán khi nhận hàng</h4>
+								<h4>Thanh toán</h4>
 								<p>Hỗ trợ thanh toán khi đặt tour</p>
 							</div>
 						</div>
@@ -127,6 +127,7 @@
 	<!--
 	================================NỘI DUNG=======================
   -->
+
 	<!--
 	========================SÁCH VỪA XUẤT BẢN================
 	-->

@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="resources/css/fullcalendar.min.css">
 <link rel="stylesheet" href="resources/css/bootadmin.min.css">
 
-<title>Supplier | HiBookAdmin</title>
+<title>Supplier | HiBookTourAdmin</title>
 </head>
 <body class="bg-light">
 
 	<nav class="navbar navbar-expand navbar-dark bg-success">
 		<a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
-		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBook</a>
+		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBookTour</a>
 
 		<div class="navbar-collapse collapse">
 			<ul class="navbar-nav ml-auto">
@@ -43,12 +43,12 @@
 		<!-- CONTENT  -->
 		<div class="content p-4">
 
-			<h2 class="mb-4">Datatable Nhà Cung Cấp</h2>
+			<h2 class="mb-4">Datatable Công ty lữ hành</h2>
 			<div width="100%" style="text-align: right;">
 				<a id="add-supplier" href="#"
 					class="btn btn-icon btn-pill btn-success" data-toggle="modal"
 					data-target="#modalAdd"> <i class="fa fa-fw fa-plus"></i> Thêm
-					Nhà Cung Cấp
+					Công ty lữ hành
 				</a>
 			</div>
 
@@ -61,7 +61,7 @@
 						<thead>
 							<tr>
 								<th>ID</th>
-								<th>Tên Nhà Cung Cấp</th>
+								<th>Tên Công ty lữ hành</th>
 								<th class="actions">Actions</th>
 							</tr>
 						</thead>
@@ -78,8 +78,8 @@
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalCenterTitle">Thêm Nhà
-							Cung Cấp</h5>
+						<h5 class="modal-title" id="exampleModalCenterTitle">Thêm Công ty lữ hành
+						</h5>
 						<button type="button" class="close" data-dismiss="modal"
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
@@ -88,11 +88,11 @@
 					<!-- modal Body  -->
 					<div class="modal-body">
 						<div class="col-12">
-							<label for="validationServer01">Tên Nhà Cung Cấp</label> <input
+							<label for="validationServer01">Tên Công ty lữ hành</label> <input
 								type="text" class="form-control is-valid"
 								id="validationServer01" placeholder="Name supplier*" required>
 							<div class="invalid-feedback" style="display: none;">Hãy
-								nhập tên Nhà Cung Cấp.</div>
+								nhập tên Công ty lữ hành.</div>
 							<div class="valid-feedback" style="display: none;">Looks
 								good!</div>
 						</div>

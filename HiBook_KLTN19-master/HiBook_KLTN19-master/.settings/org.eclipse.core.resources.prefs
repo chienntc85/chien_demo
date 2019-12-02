@@ -1,7 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/main/java/ute/hibook/controller/BillController.java=UTF-8
 encoding//src/main/java/ute/hibook/controller/BookController.java=UTF-8
-encoding//src/main/java/ute/hibook/controller/PageController.java=UTF-8
 encoding//src/main/java/ute/hibook/service/impl/UserServiceImpl.java=UTF-8
 encoding//src/main/webapp/WEB-INF/views/_footer.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/_header.jsp=UTF-8

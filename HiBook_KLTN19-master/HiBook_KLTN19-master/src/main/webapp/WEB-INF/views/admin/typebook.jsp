@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="resources/css/fullcalendar.min.css">
 <link rel="stylesheet" href="resources/css/bootadmin.min.css">
 
-<title>TypeBook | HiBookAdmin</title>
+<title>TypeTour | HiBookTourAdmin</title>
 </head>
 <body class="bg-light">
 
 	<nav class="navbar navbar-expand navbar-dark bg-success">
 		<a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
-		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBook</a>
+		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBookTour</a>
 
 		<div class="navbar-collapse collapse">
 			<ul class="navbar-nav ml-auto">
@@ -43,12 +43,12 @@
 		<!-- CONTENT  -->
 		<div class="content p-4">
 
-			<h2 class="mb-4">Datatable Loại Sách</h2>
+			<h2 class="mb-4">Datatable Loại Tour</h2>
 			<div width="100%" style="text-align: right;">
 				<a id="add-typebook" href="#"
 					class="btn btn-icon btn-pill btn-success" data-toggle="modal"
 					data-target="#modalAdd"> <i class="fa fa-fw fa-plus"></i> Thêm
-					Loại Sách
+					Loại Tour
 				</a>
 			</div>
 
@@ -61,7 +61,7 @@
 						<thead>
 							<tr>
 								<th>ID</th>
-								<th>Loại Sách</th>
+								<th>Loại Tour</th>
 								<th class="actions">Actions</th>
 							</tr>
 						</thead>
@@ -79,7 +79,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="exampleModalCenterTitle">Thêm
-							Loại Sách</h5>
+							Loại Tour</h5>
 						<button type="button" class="close" data-dismiss="modal"
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
@@ -88,11 +88,11 @@
 					<!-- modal Body  -->
 					<div class="modal-body">
 						<div class="col-12">
-							<label for="validationServer01">Tên loại sách</label> <input
+							<label for="validationServer01">Tên loại Tour</label> <input
 								type="text" class="form-control is-valid"
-								id="validationServer01" placeholder="Name typebook*" required>
+								id="validationServer01" placeholder="Name typetour*" required>
 							<div class="invalid-feedback" style="display: none;">Hãy
-								nhập tên loại sách.</div>
+								nhập tên loại Tour.</div>
 							<div class="valid-feedback" style="display: none;">Looks
 								good!</div>
 						</div>
@@ -120,7 +120,7 @@
 					<div class="modal-body">
 						<div class="col-12">
 							<h5 id="xoa-title" class="modal-title">Bạn có chắc muốn xóa
-								loại sách này không?</h5>
+								loại tour này không?</h5>
 						</div>
 					</div>
 					<div class="modal-footer">

@@ -33,7 +33,7 @@
 								<img style="width: 220px;"
 									src="<%=request.getContextPath()%>/resources/images/TC.png">
 								<p class="mt-2 mb-0">
-									tctour@gmail.com<br> (+84)868934262<br> 135 Thành Thái, Phường 14, Quận 10, TP Hồ Chí Minh
+									booktour@gmail.com<br> (+84)868934262<br> 135 Thành Thái, Phường 14, Quận 10, TP Hồ Chí Minh
 								</p>
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 								<p id="dateCreate" class="mb-0">${date}</p>
 							</div>
 							<div class="col-md text-md-right">
-								<h5 class="text-uppercase">Địa người đặt</h5>
+								<h5 class="text-uppercase">Địa chỉ người đặt</h5>
 								<p id="deliveryAdress" class="mb-0">${diachi}</p>
 							</div>
 						</div>
@@ -89,18 +89,6 @@
 								style="color: red;">0 VND</span>
 						</h3>
 						<hr class="my-5">
-						<div class="row">
-							<div class="col-md ">
-								<h5 class="text-uppercase">Phương thức thanh toán</h5>
-								<p id="payment" class="mb-0" data-id="${thanhtoan.idPayment }">${thanhtoan.namePayment }</p>
-							</div>
-
-							<div class="col-md text-md-right">
-								<h5 class="text-uppercase">Phương thức vận chuyển</h5>
-								<p id="transport" class="mb-0"
-									data-id="${vanchuyen.idTransport }">${vanchuyen.nameTransport}</p>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

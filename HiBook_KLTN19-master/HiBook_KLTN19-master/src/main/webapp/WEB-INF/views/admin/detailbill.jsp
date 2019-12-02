@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootadmin.min.css">
     <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/alert.css">
 
-    <title>Detail Bill | HiBookAdmin</title>
+    <title>Detail Bill | HiBookTourAdmin</title>
     
 </head>
 <body class="bg-light">
@@ -37,9 +37,9 @@
                         <div class="col-md text-md-right">
                             <img style="width: 220px;" src="<%=request.getContextPath() %>/resources/images/TC.png">
                             <p class="mt-2 mb-0">
-                                hibook@gmail.com<br>
-                                (+84)1869123456<br>
-                                Số 1, Võ Văn Ngân, Thủ Đức, TP Hồ Chí Minh
+                                booktour@gmail.com<br>
+                                (+84)0868934262<br>
+                                135 Thành Thái, phường 10, Quận 10, TP Hồ Chí Minh
                             </p>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
 
                     <div class="row">
                     	<div class="col-md ">
-                            <h5 class="text-uppercase">Người nhận</h5>
+                            <h5 class="text-uppercase">Người đặt</h5>
                             <p id="nameReceiver" class="mb-0"></p>
                         </div>
                         <div class="col-md">
@@ -60,7 +60,7 @@
                             <p id="dateCreate" class="mb-0"></p>
                         </div>
                         <div class="col-md text-md-right">
-                            <h5 class="text-uppercase">Địa chỉ nhận</h5>
+                            <h5 class="text-uppercase">Địa chỉ </h5>
                             <p id="deliveryAdress" class="mb-0">
                                 
                             </p>
@@ -72,9 +72,9 @@
                     <table class="table table-borderless mb-0">
                         <thead>
                         <tr class="border-bottom text-uppercase">
-                            <th scope="col">Tên sách</th>
+                            <th scope="col">Tên tour</th>
                             <th scope="col">Hình</th>
-                            <th scope="col">số lượng</th>
+                            <th scope="col">Số lượng</th>
                             <th scope="col">Giá</th>
                             <th scope="col" class="text-right">Tổng</th>
                         </tr>
@@ -94,7 +94,7 @@
                         </div>
                         
                         <div class="col-md text-md-right">
-                            <h5 class="text-uppercase">Phương thức vận chuyển</h5>
+                            <h5 class="text-uppercase">Địa điểm thanh toán</h5>
                             <p id="transport" class="mb-0">
                             </p>
                         </div>
@@ -116,7 +116,7 @@
 	                <!-- modal Body  -->
 		                <div class="modal-body">
 		                    <div class="col-12">
-	                        	<h5 id="change-title" class="modal-title" >Bạn có chắc muốn thay đổi tình trạng đơn hàng?</h5>
+	                        	<h5 id="change-title" class="modal-title" >Bạn có chắc muốn thay đổi tình trạng tour đã đặt?</h5>
 	                    	</div>
 		                </div>
 		                <div class="modal-footer">

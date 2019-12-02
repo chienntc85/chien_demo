@@ -54,7 +54,7 @@ $(document).ready(function getlisttypebook() {
 	});
     /* Click add */
     $('#add-typebook').click(function(){
-    	$('#exampleModalCenterTitle').text('Thêm Tác Giả');
+    	$('#exampleModalCenterTitle').text('Thêm Loại Tour');
     	button_save=-1;
     	resetInputtypebook();
     });
@@ -139,7 +139,7 @@ $(document).ready(function getlisttypebook() {
         var id=$(this).closest("tr").find('.idType').text();
         var name=$(this).closest("tr").find('.nameType').text();
         var index= table.row( $(this).closest("tr") ).index();
-        $('#xoa-title').text('Bạn có chắc muốn xóa tác giả: "'+name+'" này không?');
+        $('#xoa-title').text('Bạn có chắc muốn xóa: "'+name+'" này không?');
         deletetypebook(id, index);
     });
     /* Delete typebook */

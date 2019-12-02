@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-success">
         <a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
-        <a class="navbar-brand" href="#" style="font-weight:bold;">HiBook</a>
+        <a class="navbar-brand" href="#" style="font-weight:bold;">HiBookTour</a>
 
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">

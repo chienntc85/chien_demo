@@ -67,7 +67,7 @@ $(document).ready(function getlisttransport() {
 	});
     /* Click add */
     $('#add-transport').click(function(){
-    	$('#exampleModalCenterTitle').text('Thêm vận chuyển');
+    	$('#exampleModalCenterTitle').text('Thêm phương thức thanh toán');
     	button_save=-1;
     	resetInputtransport();
     });
@@ -159,7 +159,7 @@ $(document).ready(function getlisttransport() {
         var id=$(this).closest("tr").find('.idtransport').text();
         var name=$(this).closest("tr").find('.nametransport').text();
         var index= table.row( $(this).closest("tr") ).index();
-        $('#xoa-title').text('Bạn có chắc muốn xóa Nhà cung cấp: "'+name+'" này không?');
+        $('#xoa-title').text('Bạn có chắc muốn xóa: "'+name+'" này không?');
         deletetransport(id, index);
     });
     /* Delete transport */

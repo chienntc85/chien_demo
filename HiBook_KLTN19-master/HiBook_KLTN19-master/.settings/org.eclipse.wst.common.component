@@ -5,7 +5,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <property name="context-root" value="HiBook_KLTN19"/>
         <property name="java-output-path" value="/HiBook_KLTN19/target/classes"/>
+        <property name="context-root" value="HiBook_KLTN19"/>
     </wb-module>
 </project-modules>

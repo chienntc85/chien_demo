@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="resources/css/fullcalendar.min.css">
 <link rel="stylesheet" href="resources/css/bootadmin.min.css">
 
-<title>User Review | BootAdmin</title>
+<title>User Review | BookTourAdmin</title>
 </head>
 <body class="bg-light">
 
 	<nav class="navbar navbar-expand navbar-dark bg-success">
 		<a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
-		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBook</a>
+		<a class="navbar-brand" href="#" style="font-weight: bold;">HiBookTour</a>
 
 		<div class="navbar-collapse collapse">
 			<ul class="navbar-nav ml-auto">
@@ -53,7 +53,7 @@
 						<thead>
 							<tr>
 								<th>Mức độ(Start)</th>
-								<th>Sách</th>
+								<th>Tour</th>
 								<th>Tiêu đề</th>
 								<th>Nội dung</th>
 								<th>Thời gian</th>

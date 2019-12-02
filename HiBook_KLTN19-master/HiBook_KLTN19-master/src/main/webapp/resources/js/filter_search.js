@@ -114,7 +114,7 @@ $(document).ready(function() {
 			if((page-1)*6 <= i && i < (((page-1)*6)+6))
 			{
 				sp_search+='<div class="col-sm-6 col-md-4 " style="margin-bottom: 20px;"><div class="sanpham"><div class="thumbnail entry">'
-					+'<a href="/HiBook_KLTN19/detail-book/'+item.idBook+'" class="non-textdecoration" target="_blank"><div id="hinh" class="img_center">'
+					+'<a href="/HiBook_KLTN19/detail-tour/'+item.idBook+'" class="non-textdecoration" target="_blank"><div id="hinh" class="img_center">'
 					+'<img src="/HiBook_KLTN19/resources/images/book/'+item.picBook+'" alt="Nature"></div></a>'
 					+'</div><div class="h"><span id="NameSP">'+item.nameBook+'</span><br /><span style="color: #8a8787; padding: 10px; font-size: 14px;">';
 				$.each(item.authors, function (i, author) {
