@@ -33,7 +33,7 @@
 								<img style="width: 220px;"
 									src="<%=request.getContextPath()%>/resources/images/TC.png">
 								<p class="mt-2 mb-0">
-									tctour@gmail.com<br> (+84)868934262<br> 135 Thành Thái, Phường 14, Quận 10, TP Hồ Chí Minh
+									booktour@gmail.com<br> (+84)868934262<br> 135 Thành Thái, Phường 14, Quận 10, TP Hồ Chí Minh
 								</p>
 							</div>
 						</div>

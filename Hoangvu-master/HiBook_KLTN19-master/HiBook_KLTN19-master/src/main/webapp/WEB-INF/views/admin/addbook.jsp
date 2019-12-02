@@ -24,7 +24,7 @@
              <div class="col-lg-12">
                  <div class="card">
                      <div class="card-header">
-                         <strong>Book</strong> Form
+                         <strong>Tour</strong> Form
                      </div>
 	                     <div class="card-body card-block">
 	                             <div class="row form-group">

@@ -89,6 +89,31 @@
 					</table>
 				</div>
 			</div>
+			<div class="card mb-4">
+				<div class="card-body">
+					<table id="table-typebook"
+						class="table table-hover dataTable no-footer dtr-inline"
+						cellspacing="0" width="100%" role="grid"
+						aria-describedby="example_info" style="width: 100%;">
+						<thead>
+							<tr>
+								<th>Qúy 1</th>
+								<th>Qúy 2</th>
+								<th>Qúy 3</th>
+								<th>Qúy 4</th>
+							</tr>
+						</thead>
+						<tbody id="list-typebook">
+							<tr>
+							<td>${Doanhthuqui1}đ</td> </br>
+							<td>${Doanhthuqui2}đ</td>
+							<td>${Doanhthuqui3}đ</td>
+							<td>${Doanhthuqui4}đ</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
 		<!-- MODAL  ADD-->
 		<div class="modal fade" id="modalAdd" tabindex="-1" role="dialog"
